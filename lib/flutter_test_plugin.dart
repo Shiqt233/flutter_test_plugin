@@ -11,4 +11,8 @@ class FlutterTestPlugin {
     final String version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
+
+  static String test(){
+    return "来自自定义flutter插件的一个测试";
+  }
 }
